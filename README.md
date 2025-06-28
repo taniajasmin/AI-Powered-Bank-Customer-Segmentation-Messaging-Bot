@@ -38,7 +38,7 @@ The workflow processes natural language requests through these steps:
 
 Key Components
 1. LLM Integration (Conceptual Python Implementation)
-python
+``` python
 # Sample LLM processing logic
 prompt = f"""
 Analyze this bank request and extract criteria and message:
@@ -55,6 +55,8 @@ response = await context.httpRequest({
         contents: [{"role": "user", "parts": [{"text": prompt}]}
     }
 })
+```
+
 2. Customer Data Structure
 ```json
 [
